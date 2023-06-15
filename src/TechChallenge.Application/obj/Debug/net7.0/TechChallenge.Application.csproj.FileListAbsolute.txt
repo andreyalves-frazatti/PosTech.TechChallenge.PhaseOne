@@ -1,0 +1,15 @@
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/bin/Debug/net7.0/TechChallenge.Application.deps.json
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/bin/Debug/net7.0/TechChallenge.Application.dll
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/bin/Debug/net7.0/TechChallenge.Application.pdb
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/bin/Debug/net7.0/TechChallenge.Domain.dll
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/bin/Debug/net7.0/TechChallenge.Domain.pdb
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.csproj.AssemblyReference.cache
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.AssemblyInfoInputs.cache
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.AssemblyInfo.cs
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.csproj.CoreCompileInputs.cache
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.csproj.CopyComplete
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.dll
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/refint/TechChallenge.Application.dll
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/TechChallenge.Application.pdb
+/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/Debug/net7.0/ref/TechChallenge.Application.dll

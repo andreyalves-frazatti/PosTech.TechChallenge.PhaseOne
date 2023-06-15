@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "boIkV+imBSR0m77XYqjBpeC/Loq0Lu/0YDMpXtMhS/+KQRoQ4fsAo8+Wi4D3H5/63PZyacWZCGVq+nFPDpfKtQ==",
+  "success": true,
+  "projectFilePath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/TechChallenge.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/andrey/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/andrey/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/andrey/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/andrey/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/andrey/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/andrey/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

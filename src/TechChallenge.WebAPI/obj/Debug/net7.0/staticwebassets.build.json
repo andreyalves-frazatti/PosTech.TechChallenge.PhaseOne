@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qhPTRmriiHTITXgwf46Wy+LHrQxfTnalIMZFKJIaGjE=",
+  "Source": "TechChallenge.WebAPI",
+  "BasePath": "_content/TechChallenge.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

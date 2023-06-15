@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Infrastructure/TechChallenge.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/TechChallenge.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/TechChallenge.Application.csproj",
+        "projectName": "TechChallenge.Application",
+        "projectPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/TechChallenge.Application.csproj",
+        "packagesPath": "/Users/andrey/.nuget/packages/",
+        "outputPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Domain/TechChallenge.Domain.csproj": {
+                "projectPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Domain/TechChallenge.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Domain/TechChallenge.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Domain/TechChallenge.Domain.csproj",
+        "projectName": "TechChallenge.Domain",
+        "projectPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Domain/TechChallenge.Domain.csproj",
+        "packagesPath": "/Users/andrey/.nuget/packages/",
+        "outputPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Infrastructure/TechChallenge.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Infrastructure/TechChallenge.Infrastructure.csproj",
+        "projectName": "TechChallenge.Infrastructure",
+        "projectPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Infrastructure/TechChallenge.Infrastructure.csproj",
+        "packagesPath": "/Users/andrey/.nuget/packages/",
+        "outputPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/TechChallenge.Application.csproj": {
+                "projectPath": "/Users/andrey/Desktop/FIAP/PosTech.TechChallenge.PhaseOne/src/TechChallenge.Application/TechChallenge.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.16.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.138, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
