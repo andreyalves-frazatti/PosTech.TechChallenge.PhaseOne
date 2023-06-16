@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TechChallenge.Application;
 using TechChallenge.Application.UseCases.CreateProduct;
+using TechChallenge.Application.Queries;
 
 namespace TechChallenge.WebAPI;
 
@@ -20,7 +21,7 @@ public class ProductController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetByIdAsync([FromRoute(Name = "id")] Guid productId, CancellationToken cancellationToken)
     {
-        var product = await _productQueries.GetByIdAsync(new() { Id = productId }, cancellationToken);
+        var product = await _productQueries.GetByIdAsync(productId, cancellationToken);
 
         return product is not null ? Ok(product) : NoContent();
     }

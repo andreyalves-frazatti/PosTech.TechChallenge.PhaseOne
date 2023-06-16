@@ -8,7 +8,7 @@ public class ProductTests
     public void Should_CreateNewProduct_When_ParamsIsValid()
     {
         /* Arrange */
-        ProductId productId = new() { Id = Guid.NewGuid() };
+        var productId = Guid.NewGuid();
         var name = "Processador Intel i9 13900K";
         var description = "Processador Intel";
         var price = 3_900M;

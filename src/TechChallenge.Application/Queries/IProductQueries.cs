@@ -1,7 +1,7 @@
 ﻿using TechChallenge.Domain.Entities;
 
-namespace TechChallenge.Application;
+namespace TechChallenge.Application.Queries;
 public interface IProductQueries
 {
-    Task<Product?> GetByIdAsync(ProductId productId, CancellationToken cancellationToken = default);
+    Task<Product?> GetByIdAsync(Guid productId, CancellationToken cancellationToken = default);
 }

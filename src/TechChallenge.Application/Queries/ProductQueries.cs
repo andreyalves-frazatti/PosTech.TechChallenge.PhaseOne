@@ -1,7 +1,7 @@
 ﻿using TechChallenge.Domain.Entities;
 using TechChallenge.Domain.Repositories;
 
-namespace TechChallenge.Application;
+namespace TechChallenge.Application.Queries;
 public class ProductQueries : IProductQueries
 {
     private readonly IProductRepository _productRepository;
@@ -13,7 +13,7 @@ public class ProductQueries : IProductQueries
         _imageRepository = imageRepository;
     }
 
-    public async Task<Product?> GetByIdAsync(ProductId productId, CancellationToken cancellationToken = default)
+    public async Task<Product?> GetByIdAsync(Guid productId, CancellationToken cancellationToken = default)
     {
         var product = await _productRepository.GetByIdAsync(productId, cancellationToken);
 

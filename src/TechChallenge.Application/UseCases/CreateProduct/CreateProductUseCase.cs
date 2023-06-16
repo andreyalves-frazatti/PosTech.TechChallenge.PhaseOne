@@ -14,11 +14,9 @@ public class CreateProductUseCase : ICreateProductUseCase
 
     public async Task<Product> ExecuteAsync(CreateProductUseCaseInput input, CancellationToken cancellationToken)
     {
-        ProductId productId = new() { Id = Guid.NewGuid() };
-
         Product product = new()
         {
-            Id = productId,
+            Id = Guid.NewGuid(),
             Name = input.Name,
             Description = input.Description,
             Price = input.Price

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TechChallenge.Application.UseCases.CreateImage;
+using TechChallenge.Application.Queries;
 
 namespace TechChallenge.WebAPI;
 
@@ -7,11 +8,13 @@ namespace TechChallenge.WebAPI;
 [Route("api/v1/images")]
 public class ImageController : ControllerBase
 {
+    private readonly IImageQueries _imageQueries;
     private readonly ICreateImageUseCase _createImageUseCase;
 
-    public ImageController(ICreateImageUseCase createImageUseCase)
+    public ImageController(ICreateImageUseCase createImageUseCase, IImageQueries imageQueries)
     {
         _createImageUseCase = createImageUseCase;
+        _imageQueries = imageQueries;
     }
 
     [HttpPost("upload")]
@@ -23,11 +26,19 @@ public class ImageController : ControllerBase
         {
             Stream = stream,
             Extension = "",
-            ProductId = new() { Id = viewModel.ProductId }
+            ProductId = viewModel.ProductId
         };
 
         var image = await _createImageUseCase.ExecuteAsync(input, cancellationToken);
 
         return Ok(image);
+    }
+
+    [HttpGet("{product-id}")]
+    public async Task<IActionResult> UploadAsync([FromRoute(Name = "product-id")] Guid productId, CancellationToken cancellationToken)
+    {
+        var images = await _imageQueries.GetImagesByProductIdAsync(productId, cancellationToken);
+
+        return images is not null ? Ok(images) : NoContent();
     }
 }

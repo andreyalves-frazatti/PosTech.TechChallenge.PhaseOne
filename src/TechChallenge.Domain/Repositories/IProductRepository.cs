@@ -6,5 +6,5 @@ public interface IProductRepository
 {
     Task InsertOneAsync(Product product, CancellationToken cancellationToken);
 
-    Task<Product?> GetByIdAsync(ProductId productId, CancellationToken cancellationToken);
+    Task<Product?> GetByIdAsync(Guid productId, CancellationToken cancellationToken);
 }

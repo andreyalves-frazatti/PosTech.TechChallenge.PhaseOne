@@ -6,6 +6,7 @@ using TechChallenge.Infrastructure.Persistence;
 using TechChallenge.Infrastructure;
 using TechChallenge.Application;
 using TechChallenge.Application.UseCases.CreateProduct;
+using TechChallenge.Application.Queries;
 
 namespace TechChallenge.WebAPI;
 
@@ -25,6 +26,7 @@ public class Program
         builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
         builder.Services.AddScoped<IProductQueries, ProductQueries>();
+        builder.Services.AddScoped<IImageQueries, ImageQueries>();
         builder.Services.AddScoped<ICreateImageUseCase, CreateImageUseCase>();
         builder.Services.AddScoped<ICreateProductUseCase, CreateProductUseCase>();        
 

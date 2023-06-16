@@ -17,13 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D3350A8A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.UnitTests", "tests\TechChallenge.UnitTests\TechChallenge.UnitTests.csproj", "{F41F667C-1688-48C1-876F-2D99D68BF426}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{C2297A2D-798D-45D8-9FE5-9B94F6A3EC67}"
+	ProjectSection(SolutionItems) = preProject
+		1_CREATE_TABLES.sql = 1_CREATE_TABLES.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EED7AD09-551C-4138-9BDA-C2311B68C9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,6 +48,9 @@ Global
 		{F41F667C-1688-48C1-876F-2D99D68BF426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F41F667C-1688-48C1-876F-2D99D68BF426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F41F667C-1688-48C1-876F-2D99D68BF426}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EED7AD09-551C-4138-9BDA-C2311B68C9E3} = {1AF81C59-460C-442C-AE68-CACAFD39A9CA}

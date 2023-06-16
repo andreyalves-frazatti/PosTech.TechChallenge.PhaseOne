@@ -13,33 +13,25 @@ public class ProductRepository : IProductRepository
         _connectionString = sqlConnectionString.ConnectionString;
     }
 
-    public async Task<Product?> GetByIdAsync(ProductId productId, CancellationToken cancellationToken)
+    public async Task<Product?> GetByIdAsync(Guid productId, CancellationToken cancellationToken)
     {
-        var query = "SELECT * FROM [dbo].[PRODUCT] WITH(NOLOCK) WHERE ProductId = @productId";
+        var query = "SELECT * FROM [dbo].[PRODUCTS] WITH(NOLOCK) WHERE Id = @productId";
 
         using var connection = new SqlConnection(_connectionString);
         await connection.OpenAsync(cancellationToken);
 
-        var @params = new { ProductId = productId.Id };
+        var @params = new { productId };
 
         return connection.QueryFirstOrDefault<Product>(query, @params);
     }
 
     public async Task InsertOneAsync(Product product, CancellationToken cancellationToken)
     {
-        var query = "INSERT INTO [dbo].[PRODUCT] VALUES (@ProductId, @Name, @Description, @Price)";
+        var query = "INSERT INTO [dbo].[PRODUCTS] VALUES (@Id, @Name, @Description, @Price)";
 
         using var connection = new SqlConnection(_connectionString);
         await connection.OpenAsync(cancellationToken);
 
-        var @params = new
-        {
-            ProductId = product.Id.Id,
-            product.Name,
-            product.Description,
-            product.Price
-        };
-
-        await connection.ExecuteAsync(query, @params);
+        await connection.ExecuteAsync(query, product);
     }
 }
