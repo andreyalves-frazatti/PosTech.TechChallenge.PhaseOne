@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'postechgrupo16'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D6FB68274A9B4AB290098CC139FCEB31 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B527F27B7CFC4E89A2CA1D0B4A19214D }}
           package: .
