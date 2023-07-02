@@ -14,6 +14,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var azureBlobStorageConnectionString = builder.Configuration.GetConnectionString("AzureBlobStorage");
 builder.Services.AddScoped<IBlobStorageService>(_ => new AzureBlobStorageService(azureBlobStorageConnectionString!));
@@ -36,6 +39,9 @@ builder.Services.AddScoped<IEditProductUseCase, EditProductUseCase>();
 
 var app = builder.Build();
 
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -50,6 +56,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllers();
 
 app.MapRazorPages();
 
