@@ -13,6 +13,20 @@ public class ProductQueries : IProductQueries
         _imageRepository = imageRepository;
     }
 
+    public async Task<List<Product>> GetAllAsync(CancellationToken cancellationToken = default)
+    {
+        var products = await _productRepository.GetAllAsync(cancellationToken);
+
+        if (products is null) return default;
+
+        foreach (var product in products)
+        {
+            product.Images = await _imageRepository.GetImagesByProductIdAsync(product.Id, cancellationToken);
+        }
+
+        return products;
+    }
+
     public async Task<Product?> GetByIdAsync(Guid productId, CancellationToken cancellationToken = default)
     {
         var product = await _productRepository.GetByIdAsync(productId, cancellationToken);

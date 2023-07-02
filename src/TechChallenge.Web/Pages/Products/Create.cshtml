@@ -1,0 +1,37 @@
+﻿@page
+@model TechChallenge.Web.Pages.Products.CreateModel
+
+<form method="post" enctype="multipart/form-data">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Criar Produto
+            </h2>
+            <hr/>
+        </div>
+        <div asp-validation-summary="All">
+            <div class="mb-3">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Price"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger" />
+            </div>
+            <div class="mb-3">
+                <label>Imagens</label>
+                <input type="file" name="files" multiple="multiple" class="form-control" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">
+            Criar Produto
+        </button>
+    </div>
+</form>

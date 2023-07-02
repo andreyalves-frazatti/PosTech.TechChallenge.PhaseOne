@@ -5,22 +5,24 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1AF81C59-460C-442C-AE68-CACAFD39A9CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Domain", "src\TechChallenge.Domain\TechChallenge.Domain.csproj", "{EED7AD09-551C-4138-9BDA-C2311B68C9E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Domain", "src\TechChallenge.Domain\TechChallenge.Domain.csproj", "{EED7AD09-551C-4138-9BDA-C2311B68C9E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Application", "src\TechChallenge.Application\TechChallenge.Application.csproj", "{770DB910-1B88-4688-AE40-EA6AA3EF566C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Application", "src\TechChallenge.Application\TechChallenge.Application.csproj", "{770DB910-1B88-4688-AE40-EA6AA3EF566C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Infrastructure", "src\TechChallenge.Infrastructure\TechChallenge.Infrastructure.csproj", "{33609AB3-E2D3-4916-B67F-460AD6BF0549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Infrastructure", "src\TechChallenge.Infrastructure\TechChallenge.Infrastructure.csproj", "{33609AB3-E2D3-4916-B67F-460AD6BF0549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.WebAPI", "src\TechChallenge.WebAPI\TechChallenge.WebAPI.csproj", "{9C16616F-A0F1-448A-B664-D3058B60D89A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.WebAPI", "src\TechChallenge.WebAPI\TechChallenge.WebAPI.csproj", "{9C16616F-A0F1-448A-B664-D3058B60D89A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D3350A8A-CE4A-4AC0-A078-4B2C488AA268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.UnitTests", "tests\TechChallenge.UnitTests\TechChallenge.UnitTests.csproj", "{F41F667C-1688-48C1-876F-2D99D68BF426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.UnitTests", "tests\TechChallenge.UnitTests\TechChallenge.UnitTests.csproj", "{F41F667C-1688-48C1-876F-2D99D68BF426}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{C2297A2D-798D-45D8-9FE5-9B94F6A3EC67}"
 	ProjectSection(SolutionItems) = preProject
 		1_CREATE_TABLES.sql = 1_CREATE_TABLES.sql
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Web", "src\TechChallenge.Web\TechChallenge.Web.csproj", "{CBE096DF-11A2-48FA-9CDE-468E285F4956}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,10 @@ Global
 		{F41F667C-1688-48C1-876F-2D99D68BF426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F41F667C-1688-48C1-876F-2D99D68BF426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F41F667C-1688-48C1-876F-2D99D68BF426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE096DF-11A2-48FA-9CDE-468E285F4956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE096DF-11A2-48FA-9CDE-468E285F4956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE096DF-11A2-48FA-9CDE-468E285F4956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE096DF-11A2-48FA-9CDE-468E285F4956}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,9 @@ Global
 		{33609AB3-E2D3-4916-B67F-460AD6BF0549} = {1AF81C59-460C-442C-AE68-CACAFD39A9CA}
 		{9C16616F-A0F1-448A-B664-D3058B60D89A} = {1AF81C59-460C-442C-AE68-CACAFD39A9CA}
 		{F41F667C-1688-48C1-876F-2D99D68BF426} = {D3350A8A-CE4A-4AC0-A078-4B2C488AA268}
+		{CBE096DF-11A2-48FA-9CDE-468E285F4956} = {1AF81C59-460C-442C-AE68-CACAFD39A9CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {266B9F50-FC91-488B-9C54-BFB7022E089C}
 	EndGlobalSection
 EndGlobal
