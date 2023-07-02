@@ -12,7 +12,7 @@ public class CreateProductUseCase : ICreateProductUseCase
         _productRepository = productRepository;
     }
 
-    public async Task<Product> ExecuteAsync(CreateProductUseCaseInput input, CancellationToken cancellationToken)
+    public async Task<Product> ExecuteAsync(CreateProductUseCaseInput input, CancellationToken cancellationToken = default)
     {
         Product product = new()
         {

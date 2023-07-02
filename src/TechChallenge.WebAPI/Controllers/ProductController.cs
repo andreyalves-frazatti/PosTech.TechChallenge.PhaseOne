@@ -18,6 +18,14 @@ public class ProductController : ControllerBase
         _createProductUseCase = createProductUseCase;
     }
 
+    [HttpGet]
+    public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken)
+    {
+        var product = await _productQueries.GetAllAsync(cancellationToken);
+
+        return product is not null ? Ok(product) : NoContent();
+    }
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetByIdAsync([FromRoute(Name = "id")] Guid productId, CancellationToken cancellationToken)
     {

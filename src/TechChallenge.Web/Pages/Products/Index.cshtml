@@ -1,0 +1,79 @@
+﻿@page
+@model TechChallenge.Web.Pages.Products.IndexModel
+
+<div class="container">
+    <div class="mail-box">
+        <aside class="lg-side">
+            <div class="inbox-head">
+                <h3>Produtos</h3>
+            </div>
+            <a class="btn btn-primary btn-sx pull-left" style="margin-top:20px;margin-bottom: 20px;"
+               asp-page="/Products/Create">
+                Novo produto
+            </a>
+            <div class="inbox-body" style="margin-top:20px;">
+                <div class="mail-option">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr class="unread">
+                                <th class="col-sm-2 view-message  dont-show" style="width: min-content">Id</th>
+                                <th class="view-message col-sm-2">Nome</th>
+                                <th class="view-message col-sm-3">Descrição</th>
+                                <th class="view-message col-sm-2">Preço</th>
+                                <th>Imagem</th>
+                                <th class="col-sm-1">Comando</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Products)
+                            {
+                                <tr>
+                                    <td class="view-message  dont-show">
+                                        <h5>@item.Id</h5>
+                                    </td>
+                                    <td class="view-message">
+                                        <h5>@item.Name</h5>
+                                    </td>
+                                    <td class="view-message">
+                                        <h5>@item.Description</h5>
+                                    </td>
+                                    <td class="view-message text-left">
+                                        <h5>@string.Format("{0:C}", @item.Price)</h5>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                                @foreach (var image in item.Images)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <img src="@image.Url" style="width:100px">
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <form method="post">
+                                            <span class="btn-group pull-right">
+                                                <a class="btn btn-warning btn-xs" asp-page="Edit"
+                                                   asp-route-id="@item.Id" style="height: min-content">
+                                                    Editar
+                                                </a>
+                                                <a class="btn btn-danger btn-xs" asp-page="Delete"
+                                                   asp-route-id="@item.Id" style="height: min-content">
+                                                    Excluir
+                                                </a>
+                                            </span>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>

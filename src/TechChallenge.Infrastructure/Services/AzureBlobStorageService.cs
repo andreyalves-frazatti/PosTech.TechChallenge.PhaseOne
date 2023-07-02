@@ -13,7 +13,7 @@ public class AzureBlobStorageService : IBlobStorageService
         _blobContainerName = "uploads";
     }
 
-    async Task<Uri> IBlobStorageService.UploadAsync(string filename, Stream stream, CancellationToken cancellationToken)
+    public async Task<Uri> UploadAsync(string filename, Stream stream, CancellationToken cancellationToken)
     {
         var blobServiceClient = new BlobServiceClient(_blobStorageConnectionString);
         var containerClient = blobServiceClient.GetBlobContainerClient(_blobContainerName);
@@ -22,5 +22,14 @@ public class AzureBlobStorageService : IBlobStorageService
         await blobClient.UploadAsync(stream, cancellationToken);
 
         return blobClient.Uri;
+    }
+
+    public async Task DeleteAsync(string blobUri, CancellationToken cancellationToken)
+    {
+        var blobServiceClient = new BlobServiceClient(_blobStorageConnectionString);
+        var containerClient = blobServiceClient.GetBlobContainerClient(_blobContainerName);
+
+        var blobUriBuilder = new BlobUriBuilder(new Uri(blobUri));
+        await containerClient.DeleteBlobAsync(blobUriBuilder.BlobName, cancellationToken: cancellationToken);
     }
 }

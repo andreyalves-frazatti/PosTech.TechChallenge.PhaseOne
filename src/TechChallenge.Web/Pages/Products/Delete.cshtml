@@ -1,0 +1,33 @@
+﻿@page
+@model TechChallenge.Web.Pages.Products.DeleteModel
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Atualizar Produto</h2>
+            <hr />
+        </div>
+        <div>
+            <div class="mb-3">
+                <label asp-for="Product.Id"></label>
+                <input asp-for="Product.Id" class="form-control" readonly="readonly" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Product.Name"></label>
+                <input asp-for="Product.Name" class="form-control" readonly="readonly" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Product.Description"></label>
+                <input asp-for="Product.Description" class="form-control" readonly="readonly" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Product.Price"></label>
+                <input asp-for="Product.Price" class="form-control" readonly="readonly" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">
+            Excluir
+        </button>
+    </div>
+</form>

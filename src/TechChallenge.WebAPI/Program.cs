@@ -1,10 +1,8 @@
-
 using TechChallenge.Application.UseCases.CreateImage;
 using TechChallenge.Domain.Repositories;
 using TechChallenge.Application.Services;
 using TechChallenge.Infrastructure.Persistence;
 using TechChallenge.Infrastructure;
-using TechChallenge.Application;
 using TechChallenge.Application.UseCases.CreateProduct;
 using TechChallenge.Application.Queries;
 
